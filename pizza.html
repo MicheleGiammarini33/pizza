@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>   <!-- blocco tasto destro del mouse -->
+      function blocco_mousedx()
+       { return(false); }
+      document.oncontextmenu = blocco_mousedx;
+
+      document.onkeydown = function(blocco_tasti) {
+       if(event.keyCode == 123)
+     { return false; }
+       if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+       if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+       if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+       if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0))
+     { return false; }
+     }
+    </script>
+
+<h1>Pizza Marche</h1>
+<img src="pizza4.jpg" alt="" width="500" height="333">
+<h3>INGREDIENTI PIZZA DI FORMAGGIO MARCHIGIANA<h3>
+<h3>500 gfarina 00<h3>
+<h3>4uova<h3>
+<h3>130 mllatte<h3>
+<h3>3 cucchiaiolio extravergine d’oliva<h3>
+<h3>100 gparmigiano Reggiano DOP<h3>
+<h3>100 gpecorino romano (grattugiato)<h3>
+<h3>15 glievito di birra fresco<h3>
+<h3>1 cucchiainosale<h3>
+<h3>Mezzo cucchiainozucchero<h3>
+<h3>Mezzo cucchiainonoce moscata<h3>
+<h3>100 gpecorino romano (fresco a cubetti)<h3>
+<h3>q.b.pepe<h3>
+
+
+<a href="index.html" accesskey="w" target=""> </a>
+
+
+  </body>
+</html>

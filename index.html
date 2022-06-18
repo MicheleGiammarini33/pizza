@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script>   <!-- blocco tasto destro del mouse -->
+    function blocco_mousedx()
+     { return(false); }
+    document.oncontextmenu = blocco_mousedx;
+
+    document.onkeydown = function(blocco_tasti) {
+     if(event.keyCode == 123)
+   { return false; }
+     if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+     if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+     if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+     if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0))
+   { return false; }
+   }
+  </script>
+
+
+<style>
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto  auto auto auto;
+  background-color: #2196F3;
+  width: auto;
+  height: auto;
+
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3px;
+  font-size: 10px;
+  text-align: center;
+}
+.img {
+  opacity: 1;
+  display: block;
+  width: auto;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    width: auto;
+    height: auto;
+
+  }
+
+
+
+
+@media only screen and (max-width: 1600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #2196F3;
+    width: auto;
+    height: auto;
+
+  }
+@media only screen and (max-width: 1000px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto ;
+    background-color: #2196F3;
+    width: auto;
+    height: auto;
+
+  }
+  }
+
+</style>
+
+
+
+</head>
+<body>
+
+<img src="tonyso.webp" alt="" width="auto" height="auto">
+
+<div class="Core">
+<div class="grid-container">
+
+
+
+<div class="grid-item">
+ <a href="pizza.html">
+     <img src="pizza4.jpg" alt="" width="500" height="333">
+  </a>
+</div>
+
+<div class="grid-item">
+  <a href="pizzadelporto.html">
+    <img src="pizza3.jpg" alt="" width="500" height="333">
+    </a>
+</div>
+
+<div class="grid-item">
+    <a href="pizza.html">
+     <img src="pizza4.jpg" alt="" width="500" height="333">
+    </a>
+</div>
+
+<div class="grid-item">
+  <a href="pizzadelporto.html">
+    <img src="pizza3.jpg" alt="pizza3.jpg" width="500" height="333">
+  </a>
+</div>
+
+<div class="grid-item">
+  <a href="pizza.html">
+    <img src="pizza4.jpg" alt="" width="500" height="333">
+  </a>
+</div>
+
+<div class="grid-item">
+  <a href="pizzadelporto.html">
+    <img src="pizza3.jpg" alt="" width="500" height="333">
+  </a>
+</div>
+
+<div class="grid-item">
+  <a href="pizza.html">
+    <img src="pizza4.jpg" alt="" width="500" height="333">
+  </a>
+</div>
+
+<div class="grid-item">
+ <a href="pizzadelporto.html">
+    <img src="pizza3.jpg" alt="" width="500" height="333">
+ </a>
+    </div>
+
+<div class="grid-item">
+ <a href="pizza.html">
+    <img src="pizza4.jpg" alt="" width="500" height="333">
+ </a>
+    </div>
+
+<div class="grid-item">
+  <a href="pizzadelporto.html">
+      <img src="pizza4.jpg" alt="" width="500" height="333">
+  </a>
+</div>
+
+<div class="grid-item">
+ <a href="pizza.html">
+    <img  src="pizza3.jpg" alt="" width="500" height="333">
+ </a>
+</div>
+
+<div class="grid-item">
+  <a href="pizzadelporto.html">
+    <img src="pizza4.jpg" alt="" width="500" height="333">
+  </a>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
