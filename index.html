@@ -25,6 +25,7 @@
   display: grid;
   grid-template-columns: auto  auto auto auto;
   background-color: #2196F3;
+
   width: auto;
   height: auto;
 
@@ -33,11 +34,13 @@
   background-color: rgba(255, 255, 255, 0.8);
   padding: 3px;
   font-size: 10px;
+  padding: 3%;
   text-align: center;
 }
 .img {
   opacity: 1;
   display: block;
+  padding: 3px;
   width: auto;
   height: auto;
   transition: .5s ease;
@@ -66,17 +69,17 @@ img:hover{
     display: grid;
     grid-template-columns: auto auto;
     background-color: #2196F3;
+    padding: 3%;
     width: auto;
     height: auto;
 
   }
-
-  
-  @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .grid-container {
     display: grid;
     grid-template-columns: auto ,auto ;
     background-color: #2196F3;
+    padding: 3%;
     width: 50%;
     height: 50%;
 
@@ -89,8 +92,11 @@ img:hover{
 
 </head>
 <body>
-
+<div>
 <img src="tonyso.webp" alt="" width="auto" height="auto">
+<br></br>
+<br></br>
+</div>
 
 <div class="Core">
 <div class="grid-container">
@@ -101,12 +107,16 @@ img:hover{
  <a href="pizza.html">
      <img src="pizza4.jpg" alt="" width="500" height="333">
   </a>
+    <br></br>
+<h3>4,60 €</h3>
 </div>
 
 <div class="grid-item">
   <a href="pizzadelporto.html">
     <img src="pizza3.jpg" alt="" width="500" height="333">
     </a>
+    <br></br>
+<h3>5,60 €</h3>
 </div>
 
 <div class="grid-item">
